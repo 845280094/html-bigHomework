@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/click.js"></script>
+    <script src="../js/pageChange.js"></script>
+</head>
+<body>
+    <div class="register-container">
+        <div class="item">
+            <div>注册</div>   
+        </div>
+
+        <div class="content">
+            <div style="display: block;">
+                <label for="username">用户名:</label>
+                <input type="text" placeholder="username" id="register-username" required>
+                <br>
+                <label for="password">密码:</label>
+                <input type="password" placeholder="password" id="register-password" required>
+                <br>
+                <label for="password">确认密码:</label>
+                <input type="password" placeholder="password" id="register-password2" required>
+                <br>
+                <input type="submit" value="注册" onclick="register()">
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

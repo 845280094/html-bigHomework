@@ -1,0 +1,73 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 确保页面的整体高度和宽度是 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    font-family: Arial, sans-serif;
+}
+
+/* 容器的样式 */
+.container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    width: 100%;            /* 可选: 确保容器占满全屏 */
+    height: 100%;           /* 可选: 确保容器占满全屏 */
+}
+
+/* 盒子的样式 */
+.box {
+    text-align: center;      /* 让内部元素水平居中 */
+    padding: 20px;
+    border: 1px solid #ccc;  /* 可选: 添加边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* 可选: 添加阴影 */
+    background-color: #fff;  /* 可选: 背景颜色 */
+}
+
+/* 图片样式 */
+.box-image {
+    height: 200px;            
+    width: 200px;
+    margin-bottom: 20px;     /*图片下方的间距*/
+    border-radius: 50%;  
+}
+
+.circle-container {
+    width: 200px; /* 设置容器宽度 */
+    height: 200px; /* 设置容器高度 */
+    overflow: hidden; /* 超出容器部分隐藏 */
+    border-radius: 50%; /* 圆形容器 */
+    position: relative;
+}
+
+/* 按钮样式 */
+.box-button {
+    padding: 10px 20px;
+    margin-bottom: 20px;     /* 按钮下方的间距 */
+    border: none;            /* 去掉默认边框 */
+    background-color: #007BFF; /* 按钮背景颜色 */
+    color: #fff;             /* 按钮文字颜色 */
+    cursor: pointer;         /* 鼠标悬停时显示手型 */
+    font-size: 16px;         /* 按钮文字大小 */
+    border-radius: 5px;      /* 圆角 */
+}
+
+/* 超链接样式 */
+.box-link {
+    text-decoration: none;   /* 去掉默认下划线 */
+    color: #007BFF;          /* 超链接颜色 */
+    font-size: 16px;         /* 超链接文字大小 */
+}
+
+/* 超链接悬停样式 */
+.box-link:hover {
+    text-decoration: underline; /* 悬停时显示下划线 */
+}

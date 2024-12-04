@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.nav-left-box{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-left-little-box a,
+.nav-right-box p{
+    color: black;
+}
+
+.nav-right-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right-box img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-right-box a{
+    text-decoration: none;
+}
+
+.content{
+    max-width: 800px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img{
+    height: 450px;
+    width: 676px;
+}
+
+.content p,b{
+    font-size: 18px;
+}
+
+.hot{
+    width: 360px;
+    position: relative;
+    height: 100%;
+}
+
+.nav-left-little-box a{
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin: 0px;
+}
+
+.button{
+    background-color: red;
+    margin: 0px;
+    height: 32px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p{
+    color: white;
+}
+
+.account img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.account a{
+    text-decoration: none;
+    color: black;
+}
+
+.hot-works{
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.row-left-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.upper-box {
+    flex: 10;
+    box-sizing: border-box;
+}
+ 
+.bottom-box {
+    flex: 1;
+    box-sizing: border-box;
+    opacity: 50%;
+}
+
+.row-right-box {
+    box-sizing: border-box;
+}
+
+.row-right-box img{
+    height: 70px;
+    width: 94px;
+    object-fit: cover;
+}
+
+.more{
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 20px;
+}

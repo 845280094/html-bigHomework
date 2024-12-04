@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Center Page</title>
+    <link rel="stylesheet" href="../css/userCenter.css">
+</head>
+<body>
+
+    <div class="uc-container">
+        <div class="box">
+            <div class="circle-container">
+                <img id="preview" src="../imgs/default.jpg" class="box-image" alt="用户头像预览">
+            </div>
+            <br>
+            <button class="box-button">
+                <input id="imageInput" type="file" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                <label for="imageInput" class="upload-button">上传头像</label>
+            </button>
+            <br>
+            <a href="index.html" style="text-decoration: none;">返回首页</a>
+        </div>
+    </div>
+    
+    <script>
+
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                var imagePreview = document.getElementById('imagePreview');
+                imagePreview.src = reader.result;
+                imagePreview.style.display = 'block'; // 显示图片预览
+            }
+            // if (event.target.files && event.target.files) {
+            //     reader.readAsDataURL(event.target.files); // 读取图片文件
+            // }
+        }
+
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+        var file = event.target.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var base64String = e.target.result;
+                // 存储Base64编码到localStorage
+                localStorage.setItem('cachedImage', base64String);
+            
+                // 设置Base64字符串为图片的源
+                document.getElementById('preview').src = base64String;
+
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    </script>
+</body>
+</html>
